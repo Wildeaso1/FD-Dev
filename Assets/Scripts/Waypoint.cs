@@ -7,6 +7,10 @@ public class Waypoint : MonoBehaviour
  
     public Vector3 getPosition()
     {
-        return transform.position;
+        Vector3 position = transform.position;
+        position.y += 0.5f;
+        return position;
     }
+
+    
 }
